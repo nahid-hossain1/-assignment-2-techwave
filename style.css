@@ -383,7 +383,6 @@
     background-image: url("./assets/footer-bg.png");
     background-position: center 55% ;
     background-repeat: no-repeat;
-    /* background-size: auto; */
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -392,7 +391,7 @@
 
 
    .social-footer{
-     margin-bottom: 40px;
+    padding: 120px;
    }
 
    .footer-title{
@@ -400,7 +399,9 @@
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    /* padding-top: 100px; */
+   margin: 0;
+    padding-bottom: 30px;
+   
    } 
 
   .social-links{
@@ -408,15 +409,14 @@
     align-items: center;
     justify-content: center;
    gap: 40px;
-   margin: 120px auto;
+    padding-bottom: 30px;
   }
 
   .social-links a{
     text-decoration: none;
     color: white;
-    padding: 32px 0;
     font-weight: 200;
-    gap: 10px;
+    
    
   }
 
@@ -429,5 +429,5 @@
   .footer-text{
     font-weight: 400;
     color: lab(72.55% -1.2 -5.04);
-    /* padding-bottom: 100px; */
+    
   }
