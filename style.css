@@ -8,8 +8,10 @@
   font-weight: 400;
   font-style: normal;
 }
+ 
   body{
     margin: 0;
+    overflow-x: hidden;
   }
   .bg-color{
     background-color: #060619;
@@ -36,22 +38,22 @@
     color: #00ff88;
   }
 
- /* navbar style */
-
  header {
   /* max-width: 1600px; */
+  width: 100%;
+   min-height: 100vh; 
   background-image: url("./assets/hero-bg.png");
-  background-repeat: no-repeat;
-  background-position:cente 55%;
-  background-size:auto 1020px;
-  min-height: 750px;
-  
+   background-size: contain;
+    background-position: cover;
+  background-repeat: no-repeat; 
+  position: relative;
   
  }
 
+  /* navbar style */
  
   .brand{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .brand-color{
@@ -63,11 +65,19 @@
     color: white;
   }
 
+  .hamburger{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    color: white;
+  }
 
   .navbar{
-    padding: 24px 200px;
-    /* margin: 0 auto; */
-    max-width: 1600px;
+    display: flex;
+    padding: 14px 20px;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -129,6 +139,16 @@
       background-size: contain;
       padding: 80px;
    
+
+  }
+
+  .banner-image img{
+    max-width: 100%;
+    height: auto;
+    /* position: absolute; */
+   
+    /* right: 50px; */
+
 
   }
 
@@ -214,7 +234,7 @@
     /* text-align: center; */
   }
 
-  /* why-techwave style */
+  /*  -techwave style */
 
  .why-techwave>*{
   background-color: #230c3e;
@@ -394,7 +414,7 @@
     padding: 120px;
    }
 
-   .footer-title{
+   .footers-title{
     color: white;
     text-align: center;
     font-size: 4rem;
@@ -431,3 +451,108 @@
     color: lab(72.55% -1.2 -5.04);
     
   }
+
+
+  /* responsive style */
+
+@media screen and (max-width: 576px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    display: none;            
+  }
+
+  .btn-primary{
+    display: none;           
+  }
+
+  .hamburger{
+    display: block;           
+  }
+
+  
+ header { 
+  width: 100%;
+   min-height:auto; 
+  background-image: url("./assets/hero-bg.png");
+   background-size: 100% 100%;
+    background-position:top;
+  background-repeat: no-repeat; 
+  position: relative;
+  padding-bottom: 40px;
+  
+ }
+
+ .banner-image{
+      padding: 40px;
+      background-image:url("./assets/hero-circle.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;   
+
+  }
+
+.banner-image img{
+  max-width: 50px;
+  height: auto;
+}
+
+.about{
+  margin-top: 0px;
+}
+.about-title{
+  font-size: 2rem;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+  .about-description{
+   margin-bottom: 60px;
+    padding: 0px 20px;
+     line-height: 24px;
+  }
+
+.description-line-break{
+  line-height: 0px;
+}
+
+
+  .about-status{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    gap: 40px;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  .why-techwave>*{
+    padding: 24px;
+  }
+
+  
+   .techwave-image2{
+    padding: 100px 16px 40px 0 ;
+    padding-bottom: 16px;
+   }
+ .why-techwave{
+    margin: 0 16px;
+    margin-bottom: 80px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+      "sidebar"
+      "header "
+      "main   "
+      "footer "
+      "resource"
+  }
+
+
+
+}
