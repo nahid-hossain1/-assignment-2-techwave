@@ -111,6 +111,14 @@
     color: white;
      background: linear-gradient(to top, orange, hwb(311 2% 37%));
   }
+
+    .btn{
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+
+    }
+
    .btn-icon{
     padding: 12px 20px;
     font-size: 1rem;
@@ -120,19 +128,17 @@
     border: 1px solid lightgreen;
     background-color: transparent;
     display: inline-flex;
-    gap: 12px;
-   
-    
    }
     .btn-2{
       gap: 10px;
     }
-    
+
   /* banner style */
+
   .banner{
     text-align: center;
-
   }
+
   .banner-image{
       background-image:url("./assets/hero-circle.png");
       background-repeat: no-repeat;
@@ -186,7 +192,6 @@
     margin-top: 50px;
     margin-bottom: 16px;
 
-
   }
 
   .about-description{
@@ -195,9 +200,6 @@
     font-weight: 300;
    line-height: 40px;
    margin-bottom: 160px;
-    /* padding:0 150px; */
-   
-
   }
 
   .description-line-break{
@@ -236,7 +238,7 @@
   color: white;
  }
 
- .header, .main, .sidebar, .resource, .footer{
+ .header, .main, .sidebar, .resource, .footers{
   border-radius: 40px;
  }
  
@@ -253,8 +255,8 @@
   .resource{
     grid-area: resource;
   }
-  .footer{
-    grid-area: footer;
+  .footers{
+    grid-area: footers;
   }
 
 
@@ -267,13 +269,12 @@
     gap: 30px;
     margin: 0 350px;
     margin-bottom: 120px;
-    /* max-width: 1600px; */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-areas: 
       "sidebar  header header"
       "sidebar   main   main"
      
-      "footer footer resource"
+      "footers footers resource"
 
   }
 
@@ -337,7 +338,6 @@
   .watch-time{
     font-weight: 400;
     color: #00ff88;
-    /* margin-bottom: 12px; */
     padding: 24px;
     display: inline-block;
     
@@ -345,7 +345,6 @@
 
   .idea-card img{
     padding-left: 24px;
-    /* gap: 12px; */
    
   }
   /* host style */
@@ -549,7 +548,7 @@
       "sidebar"
       "header "
       "main   "
-      "footer "
+      "footers "
       "resource"
   }
 
@@ -605,7 +604,7 @@
   .footer{
     max-width:100%;
     max-height: 260px;
-    /* padding: 0 110px; */
+    /* margin: 0 10px; */
     background-image: url("./assets/footer-bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
